@@ -1,0 +1,52 @@
+body {
+  font-family: 'Inter', sans-serif;
+font-family: 'League Spartan', sans-serif;
+}
+
+$accordion-blue: rgb(24, 170, 228);
+
+section {
+  margin-top: 2rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  img {
+    height: 100px;
+  }
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordian{
+  width: 100%;
+  background-color: $accordion-blue;
+  border: none;
+  // border-bottom: 2px solid black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.4s;
+  img {
+    height: 50px;
+  }
+}
+.active, .accordian:hover {
+  filter: brightness(120%);
+}
+.panel {
+  background-color: rgb(233, 240, 241);
+  p {
+    margin: 0;
+    padding: 10px 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+}
