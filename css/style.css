@@ -48,6 +48,13 @@ section {
 
 .accordian img {
   height: 50px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.accordian img .bottle__rotate {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .active, .accordian:hover {
@@ -55,16 +62,21 @@ section {
           filter: brightness(120%);
 }
 
+.bottle__rotate {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
 .panel {
   background-color: #e9f0f1;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 
 .panel p {
   margin: 0;
   padding: 10px 30px;
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
 }
 /*# sourceMappingURL=style.css.map */
