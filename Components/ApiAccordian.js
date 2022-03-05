@@ -5,8 +5,21 @@ export default function apiAccordian() {
 		.then(function (data) {
 			console.log(data);
 			const html = data.map((beer) => {
-				return "Beer name: " + beer.name + " Tagline: " + beer.tagline;
+				return `
+				<button class="accordian">
+				<h3>${beer.name}</h3>
+				<img src="bottle-icon.jpg" class="bottle" />
+			</button>
+			<div class="panel">
+				<p>
+					Tagline: ${beer.tagline}
+				</p>
+			</div>
+				`;
 			});
-			console.log(html);
+
+			document
+				.querySelector("#accordionBeerInfo")
+				.insertAdjacentHTML("afterbegin", html.join(""));
 		});
 }
