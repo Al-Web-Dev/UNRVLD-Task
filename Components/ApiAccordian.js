@@ -4,5 +4,9 @@ export default function apiAccordian() {
 		.then((response) => response.json())
 		.then(function (data) {
 			console.log(data);
+			const html = data.map((beer) => {
+				return "Beer name: " + beer.name + " Tagline: " + beer.tagline;
+			});
+			console.log(html);
 		});
 }
