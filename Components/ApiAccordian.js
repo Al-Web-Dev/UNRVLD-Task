@@ -12,7 +12,9 @@ export default function apiAccordian() {
 			</button>
 			<div class="panel">
 				<p>
-					Tagline: ${beer.tagline}
+					Tagline: ${beer.tagline}<br>
+					abv: ${beer.abv}
+
 				</p>
 			</div>
 				`;
