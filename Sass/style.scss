@@ -4,6 +4,13 @@
 @import "accordian";
 @import "cta-grid";
 @import "media-queries.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+
+
 section {
 	margin-top: 2rem;
 }
@@ -12,3 +19,4 @@ section {
 	max-width: 900px;
 	margin: 0 auto;
 }
+

@@ -1,1 +1,16 @@
 # UNRVLD-Task
+
+Hi Danielle, please find my code here and thank you for taking thetime to review.
+
+Ive done as much as I can and have a list of areas I am a bit stuck with.
+
+### TODO for me:
+
+* [] FIX ACCORDION - broken, since adding the API component
+* [] Animate the bottle icon to spin 90deg on click
+* [] Filter sort list. Tying to work a solution currently
+* [] Style the CTA grid 
+
+I look forward to your feedback!
+
+Many thanks, Alex Jefferis

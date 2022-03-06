@@ -12,6 +12,13 @@
 
 .wrapper img {
   height: 100px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.wrapper img:hover {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 
 body {
@@ -96,6 +103,13 @@ body {
   background-color: #f7f1f1;
   padding: 0.5rem;
   border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card:hover {
+  background-color: #e4dada;
 }
 
 .CTA-grid__title {
@@ -110,6 +124,20 @@ body {
   .CTA-grid__wrapper {
     padding: 0;
   }
+}
+
+@media screen and (max-width: 450px) {
+  .header__title {
+    font-size: 1.4rem;
+  }
+  .wrapper img {
+    height: 80px;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 section {

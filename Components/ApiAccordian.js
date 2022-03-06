@@ -14,7 +14,7 @@ export default function apiAccordian() {
 			<div class="panel">
 				<p>
 					Tagline: ${beer.tagline}<br>
-					abv: ${beer.abv}
+					abv: ${beer.abv}%
 
 				</p>
 			</div>
@@ -28,6 +28,7 @@ export default function apiAccordian() {
 				return `
 				<div class="card">
 					<h3 class="CTA-grid__title">${beer.name}</h3>
+					<p>abv: ${beer.abv}%</p>
 					<img src="${beer.image_url}" alt="${beer.name}" />
 				</div>
 				`;

@@ -5,5 +5,9 @@
 
 	img {
 		height: 100px;
+		transition: 0.4s;
+	}
+	img:hover{
+		transform: rotate(10deg);
 	}
 }

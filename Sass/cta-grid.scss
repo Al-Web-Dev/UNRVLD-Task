@@ -14,8 +14,17 @@
 	margin-right: 2rem;
 	background-color: #f7f1f1;
 	padding: 0.5rem;
-	border-radius: 10px;
+	border-radius: 10px;	
+	cursor: pointer;
+	transition: 0.2s;
+	
 }
+
+.card:hover{
+	background-color: #e4dada;
+
+}
+
 
 .CTA-grid__title {
 	text-align: center;

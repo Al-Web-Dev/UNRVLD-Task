@@ -12,5 +12,12 @@
 
 .wrapper img {
   height: 100px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.wrapper img:hover {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 /*# sourceMappingURL=header.css.map */
