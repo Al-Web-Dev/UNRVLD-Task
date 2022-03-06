@@ -4,7 +4,8 @@ export default function apiAccordian() {
 		.then((response) => response.json())
 		.then(function (data) {
 			console.log(data);
-			const html = data.map((beer) => {
+			//map accorion beers
+			const htmlAccoridan = data.map((beer) => {
 				return `
 				<button class="accordian">
 				<h3>${beer.name}</h3>
@@ -19,9 +20,21 @@ export default function apiAccordian() {
 			</div>
 				`;
 			});
-
 			document
 				.querySelector("#accordionBeerInfo")
-				.insertAdjacentHTML("afterbegin", html.join(""));
+				.insertAdjacentHTML("afterbegin", htmlAccoridan.join(""));
+			// map CTA grid beers
+			const htmlCtaGrid = data.map((beer) => {
+				return `
+				<div class="card">
+					<h3 class="CTA-grid__title">${beer.name}</h3>
+					<img src="${beer.image_url}" alt="${beer.name}" />
+				</div>
+				`;
+			});
+
+			document
+				.querySelector(".CTA-grid__wrapper")
+				.insertAdjacentHTML("afterbegin", htmlCtaGrid.join(""));
 		});
 }
