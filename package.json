@@ -1,0 +1,26 @@
+{
+  "name": "unrvld-task",
+  "version": "1.0.0",
+  "description": "Gulp for UNRLD task",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Al-Web-Dev/UNRVLD-Task.git"
+  },
+  "author": "Alex Jefferis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Al-Web-Dev/UNRVLD-Task/issues"
+  },
+  "homepage": "https://github.com/Al-Web-Dev/UNRVLD-Task#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-sass": "^5.1.0",
+    "gulp-uglifycss": "^1.1.0"
+  }
+}

@@ -9,7 +9,7 @@ export default function apiAccordian() {
 				return `
 				<button class="accordian">
 				<h3>${beer.name}</h3>
-				<img src="bottle-icon.jpg" class="bottle" />
+				<img src="./Images/bottle-icon.jpg" class="bottle" />
 			</button>
 			<div class="panel">
 				<p>
