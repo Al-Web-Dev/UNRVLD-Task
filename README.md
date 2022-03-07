@@ -10,7 +10,6 @@ Ive done as much as I can and have a list of areas I am a bit stuck with.
 * [] Animate the bottle icon to spin 90deg on click
 * [] Filter sort list. Tying to work a solution currently
 * [] Style the CTA grid further
-* [] Set up Gulp to do CSS minify task and SASS. GULP is installed but not running yet. I have used VS code's plugin to compile my SASS up to this point.
 
 I look forward to your feedback!
 
