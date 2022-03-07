@@ -3,7 +3,7 @@ export default function apiAccordian() {
 	fetch("https://api.punkapi.com/v2/beers")
 		.then((response) => response.json())
 		.then(function (data) {
-			console.log(data);
+			//console.log(data);
 			//map accorion beers
 			const htmlAccoridan = data.map((beer) => {
 				return `

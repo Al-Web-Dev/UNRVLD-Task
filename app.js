@@ -4,4 +4,21 @@ import bottleAnimate from "./Components/BottleAnimate.js";
 
 //bottleAnimate();
 apiAccordian();
-accordionComponent();
+
+function resolveAfter2Seconds() {
+	return new Promise((resolve) => {
+		setTimeout(() => {
+			resolve("resolved");
+		}, 2000);
+	});
+}
+
+async function asyncCall() {
+	console.log("calling");
+	const result = await resolveAfter2Seconds();
+	accordionComponent();
+	console.log(result);
+	// expected output: "resolved"
+}
+
+asyncCall();
