@@ -1,6 +1,6 @@
-var gulp = require('gulp');
+var gulp = require("gulp");
 //var sass = require('gulp-sass');
-var uglifycss = require('gulp-uglifycss');
+var uglifycss = require("gulp-uglifycss");
 
 // function buildStyles() {
 //   return gulp.src('./Sass/*.scss')
@@ -8,14 +8,14 @@ var uglifycss = require('gulp-uglifycss');
 //     .pipe(gulp.dest('./css'));
 // };
 
-
-// Minify task not running in node, error 
-gulp.task('css', function () {
-  gulp.src('./css/*.css')
-    .pipe(uglifycss({
-      "maxLineLen": 80,
-      "uglyComments": true
-    }))
-    .pipe(gulp.dest('./dist/'));
+// Minify task
+gulp.task("css", function () {
+	gulp
+		.src("./css/*.css")
+		.pipe(
+			uglifycss({
+				uglyComments: true,
+			})
+		)
+		.pipe(gulp.dest("./dist/"));
 });
-
