@@ -30,6 +30,7 @@ body {
   width: 100%;
   background-color: #18aae4;
   border: none;
+  border-bottom: 1px solid #f2dada45;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
